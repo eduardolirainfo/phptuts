@@ -15,4 +15,11 @@ $produto->Quantidade = 1;
 
 var_dump($produto);
 
+/*
+o resultado deve ser:
+object(Produto)#1 (4) { ["Codigo"]=> int(4001) ["Descricao"]=> string(29) "CD - The Best of Eric Clapton" ["Preco"]=> float(5) ["Quantidade"]=> int(1) }
+
+
+*/
+
 ?>

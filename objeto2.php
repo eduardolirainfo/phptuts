@@ -18,4 +18,13 @@ $produto2->Descricao = 'CD - The Eagles Hotel California';
 $produto1->ImprimeEtiqueta();
 $produto2->ImprimeEtiqueta();
 
+/*
+o resultado deve ser:
+Código: 4001
+Descrição: CD - The Best of Eric Clapton
+Código: 4002
+Descrição: CD - The Eagles Hotel California
+*/
+
+
 ?>
