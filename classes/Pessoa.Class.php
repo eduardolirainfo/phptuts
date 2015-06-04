@@ -12,6 +12,33 @@ class Pessoa
 	
 	
 	/*
+	método contrutor
+	inicializa as propriedades
+	*/
+	function __construct($Codigo, $Nome, $Altura, $Idade, $Nascimento, $Escolaridade, $Salario)
+	{
+		$this->Codigo = $Codigo;
+		$this->Nome = $Nome;
+		$this->Idade = $Idade;
+		$this->Nascimento = $Nascimento;
+		$this->Escolaridade = $Escolaridade;
+		$this->Salario = $Salario;
+		
+		
+	}
+	/*
+	método destrutor
+	finaliza objeto
+	*/
+	function __destruct()
+	
+	{
+		
+		echo "Objeto {$this->Nome} finalizando...</br>\n";
+		
+	}
+	
+	/*
 	método Crescer
 	aumenta a altura em $centimetros	
 	*/

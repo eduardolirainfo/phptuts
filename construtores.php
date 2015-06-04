@@ -4,13 +4,7 @@ include_once 'classes/Pessoa.Class.php';
 include_once 'classes/Conta.Class.php';
 
 #Criação do objeto $carlos
-$carlos = new Pessoa;
-$carlos->Codigo = 10;
-$carlos->Nome = 'Carlos da Silva';
-$carlos->Altura = 1.85;
-$carlos->Idade = 25;
-$carlos->Nascimento = '10/04/1976';
-$carlos->Escolaridade = "Ensino Médio";
+$carlos = new Pessoa(10,'Carlos da Silva',1.85, 25, '10/04/1976', 'Ensino Médio',650.00);
 
 echo "Manipulando o objeto {$carlos->Nome} :</br>\n";
 
@@ -24,14 +18,7 @@ $carlos->Envelhecer(1);
 echo "{$carlos->Nome} possui {$carlos->Idade} anos</br>\n";
 
 #criação do objeto $conta_carlos
-$conta_carlos = new Conta;
-$conta_carlos->Agencia = 6677;
-$conta_carlos->Codigo = "CC.1234.56";
-$conta_carlos->DataDeCriacao = "10/07/02";
-$conta_carlos->Titular = $carlos;
-$conta_carlos->Senha = 9876;
-$conta_carlos->Saldo = 567.89;
-$conta_carlos->Cancelada = false;
+$conta_carlos = new Conta(6677,"CC.1234.56","10/07/02",$carlos, 9876, 567.89);
 
 echo "</br>\n";
 echo "Manipulando a conta de {$conta_carlos->Titular->Nome} :</br>\n";
