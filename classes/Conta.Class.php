@@ -38,7 +38,7 @@ class Conta
 	{
 		if($quantia > 0)
 		{
-		$this->Sado += $quantia;
+		$this->Saldo += $quantia;
 		}
 		
 	}
